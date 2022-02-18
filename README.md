@@ -25,9 +25,8 @@ https://github.com/intuit/karate
 The project is developed in Java with Maven so it will install the following software:
 
 * [Oracle Java 8 SDK](https://java.oracle.com)
-* [Apache Maven](https://maven.apache.org)
+* [Gradle](https://gradle.org/)
 * Your favorite IDE, including :
-  * [Eclipse IDE](http://www.eclipse.org) (or  Eclipse based IDE,  Spring ToolSuite is highly recommended)
   * [Intellij IDEA](http://www.jetbrains.com): To run features or scenarios tests it will configure:  
   
 ```
