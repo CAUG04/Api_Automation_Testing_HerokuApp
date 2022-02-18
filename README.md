@@ -1,46 +1,48 @@
 # Api_Automation_Testing_HerokuApp
 Este proyecto es un reto técnico con Karate APi Framework usando la Api de HerokuApp
 
-Tabla de contenido
+**Table of Contents**  
+- [Introduction](#introduction)
+- [Testing API with Karate](#testing_api_with_karate)
+- [Prerequisites](#prerequisites)
+- [Run the tests locally](#run-the-tests-locally)
 
-Introducción
-Probando API con Karate
-requisitos previos
-Ejecutar las pruebas localmente
+# Introduction
 
+In this project the most common examples of testing with the Karate framework are applied.
+To apply the test cases we will use the test website https://restful-booker.herokuapp.com/apidoc/index.html , which provides several endpoints on which you can make GET, PUT, POST and DELETE requests.
 
-Introducción
-En este proyecto se aplican los ejemplos más comunes de pruebas con el marco de Karate. Para aplicar los casos de prueba, utilizaremos el sitio web de prueba https://restful-booker.herokuapp.com/apidoc/index.html , que proporciona varios puntos finales en los que puede realizar solicitudes GET, PUT, POST y DELETE.
+# Testing API with Karate
 
-Probando API con Karate
-Karate es la única herramienta de código abierto que combina automatización de pruebas de API, simulacros, pruebas de rendimiento e incluso automatización de la interfaz de usuario en un solo marco unificado. La sintaxis BDD popularizada por Cucumber es independiente del lenguaje y fácil incluso para los no programadores. Las aserciones potentes de JSON y XML están integradas, y puede ejecutar pruebas en paralelo para aumentar la velocidad.
-La ejecución de pruebas y la generación de informes se sienten como cualquier proyecto Java estándar. Pero también hay un ejecutable independiente para equipos que no se sienten cómodos con Java. No tienes que compilar código. Simplemente escriba pruebas en una sintaxis simple y legible, cuidadosamente diseñada para HTTP, JSON, GraphQL y XML. Y puede combinar la automatización de pruebas de API y UI dentro del mismo script de prueba.
+**Karate** is the only open-source tool to combine API test-automation, mocks, performance-testing and even UI automation into a single, unified framework. The BDD syntax popularized by Cucumber is language-neutral, and easy for even non-programmers. Powerful JSON & XML assertions are built-in, and you can run tests in parallel for speed.
+
+Test execution and report generation feels like any standard Java project. But there's also a stand-alone executable for teams not comfortable with Java. You don't have to compile code. Just write tests in a simple, readable syntax - carefully designed for HTTP, JSON, GraphQL and XML. And you can mix API and UI test-automation within the same test script.
+
 https://github.com/intuit/karate
 
-requisitos previos
-El proyecto está desarrollado en Java con Maven por lo que instalará el siguiente software:
+### Prerequisites
 
-SDK de Oracle Java 8
-Apache experto
-Su IDE favorito, que incluye:
+The project is developed in Java with Maven so it will install the following software:
 
-
-Eclipse IDE (o IDE basado en Eclipse, se recomienda Spring ToolSuite)
-
-Intellij IDEA : Para ejecutar pruebas de características o escenarios configurará:
-
-
-
-
+* [Oracle Java 8 SDK](https://java.oracle.com)
+* [Apache Maven](https://maven.apache.org)
+* Your favorite IDE, including :
+  * [Eclipse IDE](http://www.eclipse.org) (or  Eclipse based IDE,  Spring ToolSuite is highly recommended)
+  * [Intellij IDEA](http://www.jetbrains.com): To run features or scenarios tests it will configure:  
+  
+```
 [Run configuration with Cucumber Java template]
     Main class: com.intuit.karate.cli.Main    
     Glue: com.intuit.karate
+```
 
 
+## Run the tests locally
 
-Ejecutar las pruebas localmente
-Para intentar ejecutar la demostración en el sistema local, ingrese a la carpeta raíz y ejecute los siguientes comandos para instalar las dependencias e iniciar los corredores de prueba uno por uno.
+To try to run the demo in the local system, enter the root folder and execute the following commands to install the dependencies and start up the test runners one by one.
 
+```
 gradle clean install -DskipTests
 gradle clean test -Dtest=ExamplesRunner
 gradle clean test -Dtest=DemoTestParallel
+
