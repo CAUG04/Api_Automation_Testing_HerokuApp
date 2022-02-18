@@ -1,5 +1,22 @@
 # Api Automation Testing HerokuApp
-Este proyecto es un reto técnico con Karate APi Framework usando la Api de HerokuApp
+This project is a technical challenge with Karate APi Framework using the HerokuApp Api
+
+**API AUTOMATION TESTING:**
+
+The challenge will be to automate an API for the following endpoints or paths:
+1. CreateBooking.
+2. Get Booking.
+3. Update Booking.
+
+**The following API will be used:**
+• URL: https://restful-booker.herokuapp.com/apidoc/index.html
+
+For the third scenario it is necessary to automate the Auth – Create Token since it is required in
+a header called Cookie where the value must be concatenated to the word “token=” with the
+response from the CreateToken endpoint.
+
+Carry out the scenarios and validations that you consider relevant.
+
 
 **Table of Contents**  
 - [Introduction](#introduction)
