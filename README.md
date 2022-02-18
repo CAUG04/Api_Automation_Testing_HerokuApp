@@ -1,4 +1,4 @@
-# Api_Automation_Testing_HerokuApp
+# Api Automation Testing HerokuApp
 Este proyecto es un reto técnico con Karate APi Framework usando la Api de HerokuApp
 
 **Table of Contents**  
