@@ -5,12 +5,13 @@ function fn() {
   if (!env) {
     env = 'dev';
   }
-var config = {
-	  env: env
-  }
   var config = {
   	  apiUrl: 'https://restful-booker.herokuapp.com/'
     }
+  if (env == 'dev'){
+  config.username = 'admin'
+  config.password = 'password123'
+  }
  var accessToken = karate.callSingle('classpath:features/token/createToken.feature', config).accessToken
   karate.configure('headers', {Authorization: 'Token ' + accessToken})
 
